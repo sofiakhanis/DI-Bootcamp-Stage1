@@ -16,3 +16,18 @@ for char in string_from_user[1:]: #to check all other symbols
     if char != result [-1]: 
         result += char
 print(result)
+
+#exercise 2 additional 
+
+string = input ("Enter a string: ")
+unique_char = []
+
+char_listed = list(string)
+
+for c in char_listed:
+    if c not in unique_char:
+        unique_char.append (c)
+
+result = ''.join(unique_char)
+print(result)
+
