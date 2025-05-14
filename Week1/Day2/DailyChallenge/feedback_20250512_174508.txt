@@ -1,0 +1,11 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day2/DailyChallenge/Multiplies_of_a_number.py
+suggestions for improvement:
+- In Challenge 1, you could add input validation to handle non-integer inputs or negative length values.
+- In Challenge 2, a more descriptive variable name than 'result' might enhance readability (e.g., 'modifiedString').
+- Consider adding docstrings to both functions to improve code documentation.
+Brief justification:
+- correctness: Both challenges are correctly implemented. Challenge 1 accurately generates a list of multiples as specified, handling the given examples perfectly. Challenge 2 efficiently removes consecutive duplicate letters, matching all provided test cases and adhering to the rule of not removing non-consecutive duplicates.  The code aligns completely with the instructions in the 'Chapter Content/Questions' section.
+- readability: The code is well-structured and easy to follow. Variable names are mostly clear (though 'result' in Challenge 2 could be improved). The use of comments is appropriate, guiding the reader through the logic. Minor improvements in naming and adding docstrings could further boost readability.
+- performance: The code's performance is efficient.  Challenge 1 uses a single loop with O(n) time complexity, which is optimal for generating the list of multiples. Challenge 2's single loop also provides optimal performance for the string manipulation task. There are no unnecessary computations or inefficient data structures used.
+- security: No security vulnerabilities are present in this code. It doesn't handle external input in a way that could introduce security risks.  The code only deals with user input for string and number values, without any network access or file operations that could expose the system.
+
