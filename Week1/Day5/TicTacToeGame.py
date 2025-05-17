@@ -7,12 +7,12 @@ def print_board(board):
 
 def check_win(board, player):
     for i in range(3):
-        if all(cell == player for cell in board[i]):  # строка
+        if all(cell == player for cell in board[i]): 
             return True
-        if all(board[j][i] == player for j in range(3)):  # столбец
+        if all(board[j][i] == player for j in range(3)): 
             return True
 
-    # Диагонали
+    
     if all(board[i][i] == player for i in range(3)):
         return True
     if all(board[i][2 - i] == player for i in range(3)):
@@ -23,8 +23,7 @@ def check_win(board, player):
 def is_draw(board):
     return all(cell in ["X", "O"] for row in board for cell in row)
 
-def main():
-    # Пустое поле
+def play():
     board = [[" " for _ in range(3)] for _ in range(3)]
     current_player = "X"
 
@@ -50,12 +49,11 @@ def main():
             if is_draw(board):
                 print("A tie!")
                 break
-
-            # Смена игрока
+            
             current_player = "O" if current_player == "X" else "X"
 
         except (ValueError, IndexError):
             print("Wrong input. Choose numbers from 0 to 2.")
 
 if __name__ == "__main__":
-    main()
+    play()
