@@ -70,7 +70,7 @@ class Zoo ():
         self.animals = []
         self.grouped = {}
     def add_animal (self, new_animal):
-            self.animals.append(new_animal)
+         self.animals.append(new_animal)
     def get_animals (self):
             for i in self.animals:
                 print (f"{i} is currently in the zoo.")
