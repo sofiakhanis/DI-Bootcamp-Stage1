@@ -1,0 +1,13 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day1/ExercisesXPw2d1/ExercisesXPw2d1.py
+suggestions for improvement:
+- In Exercise 1, the `find_oldest_cat` function could be made more concise and efficient using the `max()` function with a key.
+- Exercise 2's dog size comparison has redundant `if` statements.  A single `if/else` would suffice.
+- In Exercise 4, the `sort_animals` method could be made slightly more efficient by using a dictionary comprehension instead of iterating twice.
+- Add docstrings to functions and classes to improve readability and explain their purpose.
+- Consider adding error handling (e.g., `try...except` blocks) to handle potential errors, like trying to sell an animal not in the zoo.
+Brief justification:
+- correctness: All four exercises largely fulfill the requirements of the chapter.  The code correctly creates classes, instantiates objects, uses methods and attributes, and performs the necessary comparisons and manipulations as described. Minor inefficiencies are present but do not negate functionality.
+- readability: The code is generally readable. However, some functions could be simplified, and the addition of docstrings would significantly enhance understanding.  The nested `if` statements in exercise 2 reduce readability.
+- performance: The code's performance is good for these small-scale examples.  The algorithms used have reasonable time complexity.  No major performance bottlenecks are present.
+- security: There are no apparent security vulnerabilities in the provided code.  The code operates solely on provided data and does not interact with external systems or handle user input in a way that would pose security risks.
+
