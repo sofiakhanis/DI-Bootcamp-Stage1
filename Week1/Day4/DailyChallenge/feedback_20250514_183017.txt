@@ -1,0 +1,11 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day4/DailyChallenge/DailyChallengeD4W1.py
+suggestions for improvement:
+- The code directly concatenates characters from columns without explicitly creating a 2D list as instructed in Step 1.  A 2D list representation would improve readability and potentially make the column iteration clearer.
+- The regular expressions are efficient but might be slightly harder to understand for someone new to regex. Consider adding comments to explain their purpose and functionality.
+- The code could benefit from more descriptive variable names. For example, `column_text` could be `unfiltered_column_text`.
+Brief justification:
+- correctness: The code correctly extracts the characters from the matrix string column-wise. It accurately filters alphabetic characters and replaces non-alphabetic sequences between alphabetic characters with spaces, fulfilling the core requirements of Steps 2, 3, and 4.  However, it skips Step 1 (creating the 2D list), which is a significant part of the learning objective. The final message is also correctly printed, achieving Step 5.  The 90% score reflects the near-perfect fulfillment of requirements despite the omission of explicit 2D list creation.
+- readability: The code is relatively concise, but the use of regular expressions without comments slightly reduces readability. More descriptive variable names would improve understanding.  The omission of the 2D list also makes it less readable than it could be, hence the 85% score.
+- performance: The use of regular expressions provides efficient string manipulation. The nested loops for column processing are straightforward and have a time complexity of O(n*m), where n is the number of columns and m is the number of rows, which is acceptable.  The algorithm shows good performance considering the relatively small input size. The score is 95% due to the potentially improved efficiency if a 2D list was employed and optimized for column access.
+- security: The code doesn't involve any security-sensitive operations, such as file handling or network access. There are no apparent security vulnerabilities.  The score is 100%.
+
