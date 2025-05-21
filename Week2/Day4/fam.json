@@ -1,0 +1,6 @@
+{
+    "parents" : ["Beth", "Jerry"],
+    "children" : ["Summer", "Morty"],
+    "dogs" : ["Elly", "Dany"]
+} 
+
