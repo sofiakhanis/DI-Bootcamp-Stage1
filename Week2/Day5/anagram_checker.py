@@ -23,8 +23,7 @@ class AnagramChecker():
         anagrams = [w for w in self.listwords if sorted(w) == sorted_word and w != word]
         return anagrams
 
-        
-
+    
 
 x = AnagramChecker()
 x.is_valid_word(0)
