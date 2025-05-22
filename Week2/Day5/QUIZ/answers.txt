@@ -1,0 +1,9 @@
+1. Class - a blueprint to create an object and define its main features.
+2. Instance - an object in a class that has specific features of a class.
+3. Encapsulation - is used to restric access to methods and variables. It's done by using underscore. 
+4. Abstraction - showing only essential features of the object.
+5. Inheritance - an option to create a class with properties of other claa (to inherit properties from the other class).
+6. Multiple inheritance - an option for a class to inherit properties from multiple classes.
+7. Polymorphism - allows objects of different classes to be treated as objects of a common type.
+8. MRO - Method Resolution Order. It is the order in which Python looks for a method in a hierarchy of classes.
+
