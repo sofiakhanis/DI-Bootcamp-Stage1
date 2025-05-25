@@ -1,0 +1,11 @@
+One of the recent cases of implementation of data analysis into industrial sector with great profit is Nokia’s launch of an AI-powered platform called MX Context. The platform incorporates sensor fusion technologies (machine sensors, positioning systems and worker-worn devices) that can give a great amount of useful information about production processes. The main goal of using this application is to improve workers’ safety and make working process more efficient and less expensive in the long run. 
+
+This is how senior research director at market analyst ABI Research Ryan Martin describes the product:
+
+“Sensor fusion and AI are key capabilities for core industrial automation applications spanning robotics, autonomous work cells, and collaborative scenarios involving humans and machines.”
+
+MX Context integrates real-time data from different sensors and other sources to detect patterns in working process. Analysis of this sensor-based technology’s data allows to creates a safer environment for workers in different fields, for example logistics, mining and manufacturing. This is a great example of data-driven decision making: collected data is used to create a better working strategy with less danger for workers and more profit for the company itself. Implementation of AI in manufacturing is also a great step forward, as much as creating a user-friendly interface that allows users to create custom workflows and dashboards even without knowing how to code. 
+
+Since MX Context is a quite new product, it’s hard to tell what are the cons of not using this specific data-mining application in the field. But it can be stated that not collecting data about working patterns, technical characteristics and their implementation in the production can cause a lot of problems both with manufacturing and worker’s safety. 
+
+Source material: https://aibusiness.com/data/nokia-ai-powered-platform-for-industry-4-0-applications-launches-at-mobile-world-congress-2025 

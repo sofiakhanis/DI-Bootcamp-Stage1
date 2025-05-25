@@ -1,0 +1,13 @@
+Data analysis is one of the most important industries in modern tech-field Data itself is all the information that can be gathered about a product, customer, process, etc, and this information affects all other parts of the production. Businesses and manufacturers depend on data that they can collect because without data there is no understanding of what the company should invest in next, which strategy works and which doesn’t, how to create more with less expenses. Almost everything is connected to data that later on can be used for businesses’ benefits. Like that, professionals that can analyse data and big data in a quick and efficient way are very important. 
+
+Data analysis refers to collecting, cleansing, transforming and modelling data. Data analyst gathers data from different sources, checks its correctness and cleanliness, brings it to standard and analyses it to uncover patterns, make conclusions and identify possible outcomes of other approaches that can be implemented later on. This job revolves around understanding not only goals of the company, but also product and users. A great data analyst can find weak spots and imperfections through understanding already existing data. Data-driven approach gives companies an advantage in their field. 
+
+Nowadays, data analysis is used almost any area of modern business, from industrial marketing to owning a small grocery store. But three the most popular fields are: 
+
+1. Banking and financial sector. Implementation of data analysis in these two sectors helps with biggest challenges: prediction frauds and trading defaults. 
+
+2. Healthcare. Data analysis can be used in many ways: prediction of developing a certain disease, preventing outbreaks, getting clearer picture of healthcare situation in the area, etc. 
+
+3. Retail and logistics. The retail sector was one of the first to implement data analysis. Understanding customers profile helps with anticipating their needs. 
+
+Overall, it became impossible to imagine modern market without data analysis and data-driven concepts. Implementation of different techniques makes the production more efficient, helps to understand patterns and predict future benefits. 
