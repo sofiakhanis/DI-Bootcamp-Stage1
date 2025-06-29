@@ -1,0 +1,12 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/ExerciseXP/EXPitems.sql
+suggestions for improvement:
+- The database name should be explicitly created as 'public' using a `CREATE DATABASE public;` statement before creating tables. The provided code lacks this step.
+- Add primary keys to the `customers` table for better database design.  A simple `customer_id SERIAL PRIMARY KEY` would suffice.
+- The SQL code should be organized into a single `.sql` file for easy submission to GitHub, as instructed.
+- Comments explaining the purpose of each section of the code would enhance readability.
+Brief justification:
+- correctness: The SQL code correctly creates tables, inserts data, and retrieves data as specified in the exercise.  However, it omits the crucial step of creating the 'public' database, which is a direct requirement of the exercise.  The queries for retrieving data accurately reflect the conditions in the exercise except that they are not collected in one single file.
+- readability: The SQL code is reasonably readable. However, adding comments to each block of code would improve understanding and maintainability.  The lack of database creation detracts slightly from readability because the context is missing.
+- performance: The provided SQL queries are efficient for the given task and dataset. There are no obvious performance bottlenecks.
+- security: The code doesn't contain any obvious security vulnerabilities.  Security is not a major concern for this specific, self-contained exercise.
+

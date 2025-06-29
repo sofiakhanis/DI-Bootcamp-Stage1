@@ -1,0 +1,17 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day5/QUIZ/RockPaperScissors/game.py
+suggestions for improvement:
+- The `get_game_result` method can be significantly improved by using a dictionary or a more concise approach to avoid the long chain of `if/elif/else` statements. This will make it more readable and maintainable.
+- The `rock-paper-scissors.py` file is missing, which is a crucial part of the project.  The instructions clearly state to create this file with menu, input and summary functions. 
+- Add error handling for the case where the user enters something other than rock, paper, or scissors in `get_user_item`.
+- The code lacks score tracking as specified in the chapter instructions.  The `main` function in `rock-paper-scissors.py` should manage this.
+- Implement the functions `get_user_menu_choice`, `print_results`, and `main` as specified in `Part II - rock-paper-scissors.py` section of the instructions.
+Correctness: 90%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day5/QUIZ/RockPaperScissors/rock-paper-scissors.py
+suggestions for improvement:
+- Implement input validation in `get_user_menu_choice` to handle non-numeric or out-of-range inputs more robustly.  Currently, it only checks for specific numbers (1, 2, 3).
+- Add error handling (try-except blocks) around user input to prevent crashes from unexpected input types.
+- The `game.py` file is missing, preventing a complete correctness assessment. The provided code assumes the existence and correct functionality of the `Game` class and its methods.
+- Improve the menu display to make it clearer and more user-friendly.  Consider using a more visually appealing format.
+Correctness: 90%
+-----
