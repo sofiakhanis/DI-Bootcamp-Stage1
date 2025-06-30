@@ -1,0 +1,11 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day2/DailyChall/quiz.sql
+suggestions for improvement:
+- The code is well-structured but could benefit from more comments explaining the purpose of each query.
+- Consider using more descriptive table and column names for better readability.
+- For better performance with larger datasets, optimize subqueries or explore alternative approaches like joins if appropriate for the broader application.
+Brief justification:
+- correctness: The code accurately answers all four SQL counting queries based on the provided data in FirstTab and SecondTab.  The chapter focuses on SQL basics and table relationships; these queries directly test understanding of `COUNT(*)`, `NOT IN`, subqueries, and `IS NULL` conditions – all core SQL concepts. The predictions are also correctly stated.
+- readability: The SQL code is generally easy to understand, but adding comments would significantly improve readability, especially for someone unfamiliar with the specific context of the queries.  More descriptive names (e.g.,  `customer_id` instead of just `id`) would enhance readability.
+- performance: The performance of the queries is acceptable for the small datasets given.  However, for larger datasets, the nested `NOT IN` subqueries can become inefficient.  For a real-world application with a high volume of data, optimizing these subqueries (e.g., using joins or other techniques) would be crucial to maintain acceptable performance. The current code, though, is acceptable given the data size.
+- security: There are no apparent security vulnerabilities in the provided SQL code.  It only involves basic data retrieval operations.
+
