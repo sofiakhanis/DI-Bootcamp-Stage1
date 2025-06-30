@@ -1,0 +1,17 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day4/EXP/dict.json
+suggestions for improvement:
+- The provided code snippet only addresses Exercise 2.  Exercise 1 (random sentence generator) is missing entirely.
+- Error handling (try-except blocks) for file operations are absent in Exercise 2.  The code assumes the JSON string is always valid and the file operations will always succeed.
+- Input validation is missing in Exercise 2. The birth_date is hardcoded. It should allow the user to provide a birth date or at least have a mechanism to ensure the date is in the correct format.
+- The code doesn't demonstrate string manipulation functions mentioned in Exercise 1 (split(), join(), lower()).
+- The code lacks a 'main' function as specified for Exercise 2. It's just a data structure.
+Correctness: 80%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day4/EXP/expw2d4.py
+suggestions for improvement:
+- **Exercise 1:** The input validation in `main` is flawed.  `isinstance(len, int)` will always be `False` because `input()` returns a string. The condition should be `x == True or 2 <= int(len) <= 20` which can lead to `ValueError` if the user inputs something that cannot be converted to an integer.  It should handle this case with a `try-except` block. The function should return the sentence instead of printing it directly for better modularity. Add error handling for file operations (e.g., `FileNotFoundError`).
+- **Exercise 1:** The `get_words_from_file` function could be improved by handling potential exceptions (like the file not being found) more gracefully.  A `try...except` block would make it more robust.
+- **Exercise 2:** The code directly modifies the JSON file which could lead to data loss if something fails during modification or saving. It would be better to modify the JSON data in memory first and then write out the entire modified data. The date is hardcoded; it would be better to allow the user to specify it or dynamically generate it.
+- **Exercise 2:**  The file path is constructed correctly in both exercises by using `os.path.join` which avoids potential issues related to different operating systems' path separators.
+Correctness: 90%
+-----
