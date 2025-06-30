@@ -1,0 +1,16 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day5/PROJECCT/anagram_checker.py
+suggestions for improvement:
+- The `anagrams.py` file is missing, which is a crucial part of the assignment.  The instructions explicitly require a separate file for user interface logic.
+- Error handling for file I/O (e.g., the file not being found) is missing in `AnagramChecker.__init__`.
+- The performance of `get_anagrams` could be improved by using a more efficient data structure for searching (e.g., a set or a Trie). Currently, it iterates through the entire word list.
+- The program doesn't handle cases where the input file 'sowpods.txt' might contain invalid characters or lines which can cause errors.
+Correctness: 90%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day5/PROJECCT/anagrams.py
+suggestions for improvement:
+- The `anagram_checker.py` file is missing from the provided code.  The assessment can't be completed without it.
+- Error handling could be improved.  Instead of simply printing 'Invalid input...', consider providing more specific error messages (e.g., 'Input contains non-alphabetic characters' or 'More than one word entered').
+- The performance could be improved by using more efficient algorithms for anagram detection (e.g., sorting characters instead of nested loops).  Currently the efficiency is not specified, thus, a conservative score is given.
+- Add more comprehensive docstrings to the methods within the AnagramChecker class to explain each method's purpose, parameters, return values, and any exceptions it might raise.
+Correctness: 95%
+-----

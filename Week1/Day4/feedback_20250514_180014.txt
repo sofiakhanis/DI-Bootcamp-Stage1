@@ -1,0 +1,12 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day4/ExerciseXPDay4W1.py
+suggestions for improvement:
+- Exercise 4: The `random_number` function should handle the case where the input `number` is not within the range [1, 100] more gracefully.  A more user-friendly message than "The number is not in the range." would be ideal. Consider using a `try-except` block to catch potential `ValueError` exceptions if the user enters non-numeric input.
+- Exercise 6: The `make_great` function modifies the list in place; however it prints the results. It should either modify the list and return it, or just print the modified list without modifying the original list.  The instructions state that the `show_magicians` function should display the *modified* list; the current implementation displays the original and then the modified, separately.
+- Exercise 7: The temperature range in `get_random_temp()` in the initial implementation is incorrect; it should be -10 to 40, not -40 to -10. The bonus part for season-based temperature generation is well implemented.
+- General: Use more descriptive variable names. For example, in exercise 7,  `temp` could be `celsius_temperature`.
+Brief justification:
+- correctness: Most exercises are correctly implemented.  Exercise 4's input validation could be improved. Exercise 6's `make_great` function doesn't properly integrate with `show_magicians`. Exercise 7 initially had a flawed temperature range in `get_random_temp`, but the bonus portion correctly implements seasonal temperature generation. The rest of the exercises align correctly with the descriptions in the Chapter Content/Questions.
+- readability: The code is generally well-formatted and easy to follow.  More descriptive variable names would enhance readability.
+- performance: The code's performance is adequate for these simple exercises. No significant performance bottlenecks are present.
+- security: No security vulnerabilities are present in this code.
+
