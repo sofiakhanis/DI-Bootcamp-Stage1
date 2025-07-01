@@ -1,0 +1,10 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/DailyChallenge/actorsdailychal.sql
+suggestions for improvement:
+- The code should explicitly handle the case where the insertion of a new actor with blank fields fails.  It currently only shows the error message in the comments.  The code should either catch the error and report it in a more user-friendly way or implement input validation to prevent such insertions.
+- Add comments to explain the purpose of each SQL statement.  While the code is relatively straightforward, comments would improve readability.
+Brief justification:
+- correctness: The code correctly counts the number of actors in the `actors` table (fulfilling instruction 1). It attempts to add a new actor with blank fields (instruction 2), and shows the resulting error which demonstrates the outcome.  However, the error handling is not robust and doesn't offer a user-friendly response to the insertion failure. The overall functionality directly addresses the chapter's instructions, but improvement is needed in error handling.
+- readability: The SQL code is well-formatted and easy to understand. The use of comments to explain the error message aids in comprehension.  However, adding comments explaining the intention of each SQL statement would improve clarity further.
+- performance: The SQL queries are efficient and well-structured for their intended tasks.  The `COUNT(*)` operation is very fast and the `INSERT` is a standard operation that's optimized by the database system.
+- security: The provided code does not introduce any security vulnerabilities. The SQL statements are basic operations and don't interact with external resources or user input in a way that could create security risks.
+

@@ -1,0 +1,20 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day3/EXP/EXPw2d3.py
+suggestions for improvement:
+- In Exercise 1, the `__str__` and `__repr__` methods could be made more consistent.  Currently, `__str__` adds an 's' to the currency, while `__repr__` does not.  Choose one consistent style.
+- Exercise 1:  Add more comprehensive error handling.  For example, what happens if the `amount` in the `Currency` class isn't a number?
+- Exercise 3: The initial `random_string` is initialized with a space.  This is unnecessary and makes the code slightly less efficient.
+- Exercise 5: The output of the time difference could be formatted more clearly for better readability (e.g., showing days, hours, minutes, and seconds separately).
+- Exercise 7: The `add_users` function has a bug. The `user_list.append(user)` is outside the loop.  This appends only the last generated user. It should be inside the loop.
+- In general, add docstrings to functions to improve readability and explain their purpose.
+Correctness: 90%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day3/EXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day3/EXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
