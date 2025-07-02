@@ -1,0 +1,7 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day5/QUIZ/QuizOOP.py
+suggestions for improvement:
+- The `__str__` method in the `Card` class is good for debugging and printing but consider adding a `__repr__` method for a more informative representation when inspecting the object directly.
+- Add error handling or a check in the `deal` method to inform the user when the deck is empty before attempting to deal, instead of just returning a string.  A more robust approach might be to raise an exception.
+- The `Deck` class initialization could be slightly improved for readability by defining `suits` and `values` as class attributes, rather than local variables within the `__init__` method.
+Correctness: 95%
+-----
