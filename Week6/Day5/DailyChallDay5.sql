@@ -1,0 +1,94 @@
+--  WITH genre_budgets AS (
+--     SELECT 
+--         g.genre_name,
+--         m.movie_id,
+--         m.title,
+--         m.release_date,
+--         m.budget,
+--         LAG(m.budget) OVER (
+--             PARTITION BY g.genre_name 
+--             ORDER BY m.release_date
+--         ) AS previous_budget
+--     FROM movie m
+--     JOIN movie_genres mg ON m.movie_id = mg.movie_id
+--     JOIN genre g ON mg.genre_id = g.genre_id
+--     WHERE m.budget IS NOT NULL
+-- ),
+-- budget_growth AS (
+--     SELECT 
+--         genre_name,
+--         title,
+--         release_date,
+--         budget,
+--         previous_budget,
+--         CASE 
+--             WHEN previous_budget > 0 THEN (budget - previous_budget) * 1.0 / previous_budget
+--             ELSE NULL
+--         END AS growth_rate
+--     FROM genre_budgets
+-- )
+-- SELECT 
+--     genre_name,
+--     ROUND(AVG(growth_rate), 3) AS avg_budget_growth_rate
+-- FROM budget_growth
+-- WHERE growth_rate IS NOT NULL
+-- GROUP BY genre_name
+-- ORDER BY avg_budget_growth_rate DESC;
+
+-- WITH avg_rating_cte AS (
+--     SELECT AVG(vote_average) AS avg_rating
+--     FROM movie
+-- ),
+-- high_rated_movies AS (
+--     SELECT movie_id
+--     FROM movie, avg_rating_cte
+--     WHERE vote_average > avg_rating_cte.avg_rating
+-- ),
+-- actor_counts AS (
+--     SELECT 
+--         mc.person_id,
+--         COUNT(*) AS movie_count
+--     FROM movie_cast mc
+--     JOIN high_rated_movies hrm ON mc.movie_id = hrm.movie_id
+--     GROUP BY mc.person_id
+-- )
+-- SELECT 
+--     p.person_name,
+--     movie_count
+-- FROM actor_counts ac
+-- JOIN person p ON ac.person_id = p.person_id
+-- ORDER BY movie_count DESC
+-- LIMIT 1;
+
+-- SELECT 
+--     g.genre_name,
+--     m.title,
+--     m.release_date,
+--     m.revenue,
+--     ROUND(AVG(m.revenue) OVER (
+--         PARTITION BY g.genre_name 
+--         ORDER BY m.release_date 
+--         ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+--     ), 2) AS rolling_avg_revenue
+-- FROM movie m
+-- JOIN movie_genres mg ON m.movie_id = mg.movie_id
+-- JOIN genre g ON mg.genre_id = g.genre_id
+-- WHERE m.revenue IS NOT NULL
+-- ORDER BY g.genre_name, m.release_date;
+
+-- WITH keyword_revenue AS (
+--     SELECT 
+--         k.keyword_name,
+--         SUM(m.revenue) AS total_revenue
+--     FROM movie_keywords mk
+--     JOIN keyword k ON mk.keyword_id = k.keyword_id
+--     JOIN movie m ON mk.movie_id = m.movie_id
+--     WHERE m.revenue IS NOT NULL
+--     GROUP BY k.keyword_name
+-- )
+-- SELECT 
+--     keyword_name AS series,
+--     total_revenue
+-- FROM keyword_revenue
+-- ORDER BY total_revenue DESC
+-- LIMIT 1;
