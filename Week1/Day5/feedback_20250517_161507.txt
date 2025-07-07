@@ -1,0 +1,12 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day5/ChallengesDay5W1.py
+suggestions for improvement:
+- Challenge 1: The `string_input` function attempts to sort the input string directly after splitting it into a list.  However, `split()` returns a list, and the `sort()` method modifies the list in place rather than returning a new sorted list.  The output will be slightly incorrect.  It should explicitly convert the input into a list before sorting. It also does not handle cases where the user enters extra spaces before and after commas.
+- Challenge 1:  The function should have a more descriptive name, such as `sort_comma_separated_words`.
+- Challenge 2: The `input_string` function correctly identifies the longest word in a sentence, but it does not handle punctuation within the words as specified in the instructions (e.g. apostrophes, commas). It also does not explicitly include a return statement, which is implied in the challenge description.  The function should have a more descriptive name, such as `find_longest_word`.
+- Both functions: Add docstrings to clearly explain the function's purpose, parameters, and return values.
+Brief justification:
+- correctness: Challenge 1 is partially correct; it attempts to sort the words but doesn't handle the input and output string formatting correctly.  Challenge 2 is mostly correct, finding the longest word ignoring punctuation which contradicts the challenge.
+- readability: The code is relatively readable, but could be significantly improved with better function names, docstrings, and more consistent formatting. The direct printing within the functions reduces reusability.
+- performance: The performance of both functions is good for their size.  The sorting in Challenge 1 is efficient (O(n log n)). The linear scan for the longest word in Challenge 2 is also efficient (O(n)).
+- security: There are no security vulnerabilities in the provided code.  The code only takes string input from the user and performs basic string manipulations, which are inherently safe.
+
