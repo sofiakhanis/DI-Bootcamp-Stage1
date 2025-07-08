@@ -1,0 +1,17 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day2/ExercisesXP/ExercisesXPd2.py
+suggestions for improvement:
+- In Exercise 1, while the code correctly uses sets and performs the operations, it doesn't explicitly handle the potential for adding a number that is already present in the set.  Adding a `try-except` block to handle `KeyError` would enhance robustness. Also, the instructions mention removing the *last* number added; this is not well-defined for sets because they are unordered.  Consider clarifying or using a list if order matters.
+- Exercise 2's solution cleverly uses a workaround to modify a tuple by converting it to a list, making changes, and converting it back.  However, this bypasses the core concept of immutability. A better approach would be to explain why adding elements directly to a tuple isn't possible and create a new tuple.
+- Exercise 5's first loop starts from index 0 and should print 1-20; it currently starts from 0 and prints 1-21.  The second loop efficiently uses modulo to check even indices.
+- Exercise 6's `while` loop is correctly implemented but could use a more descriptive variable name than `secret_name`.
+- Exercise 7's solution is excellent; it neatly handles multiple fruits, using `.split()` to create a list. The logic for checking the selected fruit is correct.
+- Exercise 8 is well-structured and handles the input and calculation effectively. It cleanly uses f-strings for formatted output. Consider adding input validation to ensure the user provides valid inputs.
+- Exercise 9 correctly calculates the total cost based on age ranges. The bonus section's logic for filtering attendees based on age restrictions is sound. A more descriptive variable name than `restricted_film` would be better.
+- Exercise 10 efficiently removes "Pastrami" using a `for` loop. However, it reconstructs sandwich names; a better design would avoid this and directly add the original sandwich names to `finished_sandwiches`.
+- Overall, consider adding more comments to clarify the intent and logic in various parts of the code.  Using more descriptive variable names will improve readability.
+Brief justification:
+- correctness: The code largely fulfills the requirements of the exercises.  However, some solutions use workarounds rather than directly addressing the core concepts (e.g., modifying tuples), while others have minor logic inconsistencies (e.g., Exercise 5, loop range).  The solutions to many problems are effective and demonstrate a good understanding of the concepts.
+- readability: The code is generally well-formatted and easy to follow.  However, some variable names could be more descriptive (e.g., using clearer names than `int_fl`).  Comments are relatively sparse, and more comments would enhance understanding of the code's intent.
+- performance: The code is efficient in most exercises. The use of list comprehensions (Exercise 4) and efficient looping structures (Exercise 5) demonstrates an understanding of efficient techniques. However, the modification of a tuple via a list in Exercise 2 is not performance-optimal and unnecessarily adds complexity.
+- security: The code does not exhibit any security vulnerabilities.  No user input is directly used in a way that could lead to injection attacks or other security risks.  The code is secure as provided.
+

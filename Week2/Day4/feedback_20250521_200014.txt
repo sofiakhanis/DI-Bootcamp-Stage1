@@ -1,0 +1,13 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day4/DailyChallw2d4.py
+suggestions for improvement:
+- The `word_frequency` method should handle cases with no words more gracefully.  Returning `None` if the input text is empty would be better than causing an error. Consider adding a check for an empty string or whitespace-only input in the `__init__` method. 
+- The `remove_stop_words` method uses a hardcoded list of stop words.  It would be better to load these words from a file or a more comprehensive library to ensure broader coverage and easier maintainability.
+- The `most_common_word` method could be made more efficient by using the `collections.Counter` object for word counting. This would simplify the code and improve performance for very large texts.
+- Add more comprehensive error handling for the `from_file` method, such as checking if the file exists and handling potential `IOError` exceptions.  Include informative error messages.
+- The `word_frequency` method could be slightly improved by handling edge cases where a user provides empty input
+Brief justification:
+- correctness: The code implements all the required classes and methods as outlined in the Chapter Content/Questions. The functionality of each method is largely correct, however, there are some minor issues with error handling and edge cases that prevent a perfect score.  For example,  `word_frequency` doesn't explicitly handle empty strings gracefully.  The stop word list is hardcoded, which is less flexible than using an external resource. The file handling in `from_file` lacks error handling.
+- readability: The code is generally readable and well-structured. However, some improvements could be made. For example, the stop word list in `remove_stop_words` could be externalized, improving readability and maintainability.  More descriptive variable names in certain cases would enhance readability.
+- performance: The performance of the code is reasonable for small text inputs. However, the `most_common_word` method could be significantly optimized using `collections.Counter` for larger inputs.  The current implementation has a time complexity of O(n*m) where n is the number of words and m is the average length of a word. Using `Counter` reduces this to O(n).
+- security: The code is secure as it does not directly interact with external sources in a way that introduces security risks. File handling uses proper `with` statement for resource management.
+
