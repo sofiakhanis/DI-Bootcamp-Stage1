@@ -1,0 +1,15 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day4/EXP/Untitled.sql
+suggestions for improvement:
+- Task 1: The correlated subquery in Task 1 is inefficient.  Consider joining tables instead of using a correlated subquery for better performance. The average age calculation could be improved by handling cases where no medals are awarded.
+- Task 2 & 3:  The nested subqueries work correctly, but could be optimized for readability. Using CTEs (Common Table Expressions) would improve the organization and readability of these queries.
+- Task 4: The DELETE statement with a subquery correctly removes records. No issues here.
+- Task 1 (Exercise 2): The correlated subquery in the UPDATE statement is inefficient, similar to Exercise 1 Task 1.  Consider a join for better performance.  Error handling for cases where no height data exists for a region should be implemented.
+- Task 2 (Exercise 2): The INSERT statement uses nested subqueries that work but lack readability. Consider using CTEs for clarity.
+- Task 3 (Exercise 2): The use of CTEs is a good approach here. However, the query could be further optimized to avoid repeated calculations.
+- Task 4 (Exercise 2): The query for finding dual-season participants is well-structured and efficient.
+Brief justification:
+- correctness: The code mostly addresses the tasks outlined in the chapter.  However, some queries, particularly those using correlated subqueries within UPDATE and SELECT statements, are inefficient and could be significantly improved.  The core logic for each task is largely correct, though optimization is needed for efficiency and robustness.
+- readability: The code is generally readable, but the use of nested subqueries in some cases makes it difficult to follow.  Using CTEs would improve readability significantly.  Variable naming is clear.
+- performance: The performance of several queries is suboptimal due to the use of inefficient correlated subqueries.  Joining tables directly will offer substantial performance improvements, especially on larger datasets.  The use of CTEs can also improve performance by avoiding repeated calculations.
+- security: No security vulnerabilities are present in the provided SQL code. The code only performs read and write operations within the specified database; there's no exposure to external inputs or potential SQL injection.
+
