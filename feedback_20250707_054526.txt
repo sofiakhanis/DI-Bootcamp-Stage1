@@ -1,0 +1,10 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day3/EXP/dvdrent.sql
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day3/EXP/dvdrenttwo.sql
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----

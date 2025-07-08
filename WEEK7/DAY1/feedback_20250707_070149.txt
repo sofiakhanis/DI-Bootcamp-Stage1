@@ -1,0 +1,13 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/DAY1/DailyChallw7d1.sql
+suggestions for improvement:
+- The code lacks comments explaining the purpose of each SQL statement which reduces readability.
+- While the code addresses most data cleaning aspects, it misses outlier handling as requested by the task (point 5).  The z-score calculation is a good start, but doesn't explicitly identify or address outliers.  A decision should be made on how to handle them (e.g., removal, capping, or transformation).
+- The code uses implicit joins in the outlier detection section.  Explicit joins (using JOIN syntax) improve readability and maintainability.
+- The code could benefit from error handling (e.g., TRY...CATCH blocks in a procedural SQL context) to gracefully handle unexpected situations during data transformation.
+- Consider adding a final SELECT * FROM employees; to visually verify the final, cleaned dataset.
+Brief justification:
+- correctness: The SQL code successfully addresses points 1, 2, 3, 4, and partially 6 from the task.  It handles missing values (1) by updating the department to 'Unknown' where it was NULL. It checks for duplicates (2) and corrects inconsistent capitalization (3). It alters the data type of hire_date (4) and standardizes it using z-score (6). However, it only calculates z-scores for outlier detection without addressing how to actually handle them (5). This is why correctness score is 90% and not 100%.
+- readability: The code is reasonably readable, but could benefit from more comments explaining the purpose of each step and from using explicit JOINs. The naming is consistent, but additional comments would vastly improve understanding.
+- performance: The SQL queries are generally efficient. The use of CTEs (Common Table Expressions) improves readability and may also improve performance in some database systems. However,  the performance could be slightly improved by adding indexes to relevant columns before performing the queries (especially if dealing with a very large dataset).
+- security: The code doesn't present any obvious security vulnerabilities.  It focuses solely on data manipulation within the specified table, without external data sources or user inputs that could introduce security risks.
+
