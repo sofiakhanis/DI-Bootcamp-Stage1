@@ -1,0 +1,10 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day+3/EXP/dvdrent.sql
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day+3/EXP/dvdrenttwo.sql
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----

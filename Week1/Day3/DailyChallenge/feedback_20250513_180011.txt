@@ -1,0 +1,14 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week1/Day3/DailyChallenge/DChDay3W1.py
+suggestions for improvement:
+- In Challenge 1, add input validation to handle non-alphabetic characters.  The prompt mentions a 10-character limit, but the code only prints a warning; it should re-prompt the user for input until a valid word is entered.
+- In Challenge 1, the code lacks error handling for empty input. Add a check for empty strings.
+- Improve the error message in Challenge 1 to be more user-friendly.
+- In Challenge 2,  the data cleaning could be improved using more robust regular expressions to handle a wider range of potential price formats.
+- Add comments explaining the purpose of each section of code in both challenges for better readability.
+- Consider using more descriptive variable names (e.g., `wallet_amount` could be `available_funds`).
+Brief justification:
+- correctness: Both challenges are solved correctly for the given test cases.  Challenge 1 accurately creates the letter index dictionary. Challenge 2 correctly identifies and sorts affordable items. However, both lack robustness in handling edge cases such as invalid user input or unexpected price formats (missing input validation and error handling). The 10-character limit in Challenge 1 is not strictly enforced, only warned about.
+- readability: The code is generally readable, but could be improved with more comments and better variable names. The use of `replace()` twice in both challenges could be simplified.  The structure is okay, but some improvements would enhance clarity.
+- performance: The performance is acceptable for the given examples.  The use of simple loops and string operations makes it reasonably efficient. The use of `replace()` multiple times is slightly less efficient than it could be but does not significantly impact performance for the scale of data processed.
+- security: There are no obvious security vulnerabilities in this code.  It primarily deals with user input and string manipulation, which don't pose major security risks in this context.
+

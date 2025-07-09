@@ -1,0 +1,15 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day2/EXP/EXPd3w2.2.py
+suggestions for improvement:
+- In Exercise 3, the `PetDog` class's `__init__` method should explicitly include `weight` as an argument and pass it to the `super().__init__` call.  The current implementation will result in a `TypeError`.
+- In Exercise 3,  add input validation to handle potential errors, such as incorrect data types for age or weight.
+- In Exercise 3, the `play` method implicitly converts the dog names to strings using `str(item.name)`. It would be clearer to explicitly specify the type as a string in the method's definition or use type hinting.
+- In Exercise 4,  add error handling (e.g., a `try...except` block) to gracefully handle cases where a person's name is not found in the family.
+Correctness: 90%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day2/EXP/EXPd3w2.py
+suggestions for improvement:
+- In Exercise 1, the `Cat` class inherits from `Pets`, which is not ideal.  `Pets` should be a container class; Cats shouldn't be Pets.  The `walk()` method in `Pets` could be improved by using f-strings for better readability and clarity.  The Siamese, Bengal, and Chartreux classes are empty; they should have their own distinct attributes or methods if needed. 
+- In Exercise 2, the `fight` method could be made more concise. The introduction of `get_power` adds unnecessary complexity.  The fight logic directly using `run_speed * weight` would be more efficient and readable.
+- Exercise 3 is missing. The provided code only covers exercises 1 and 2.
+Correctness: 90%
+-----
