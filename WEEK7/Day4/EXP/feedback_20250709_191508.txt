@@ -1,0 +1,12 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/Day4/EXP/week7day4exp.py
+suggestions for improvement:
+- Exercise 1: The code creates a basic calculator, but it doesn't include input cells for the numbers.  Users would need to manually input values into cells B1 and B2, making the calculator less user-friendly. Consider adding cells for user input and clear instructions.
+- Exercise 2: The code correctly identifies and prints plants not in stock. However, error handling (e.g., for a missing file) is absent.  It also assumes the 'Plants.xlsx' file is in the same directory.  Adding a file path and handling exceptions would improve robustness.
+- Exercise 3: The code effectively filters and writes the data, but again lacks error handling for file I/O operations.  Adding `try-except` blocks would make the code more resilient to issues like the file not existing.
+- Exercise 4: The code accurately performs the data manipulation and visualization. The `grouped_df.close()` call is unnecessary because Pandas DataFrames don't have a close method.  The solution directly addresses the described task.  There is a problem with the provided link in the original prompt. It appears to be a different link than the one used in the code.
+Brief justification:
+- correctness: The code addresses all four exercises, demonstrating the use of openpyxl for Excel manipulation, data filtering, and visualization with matplotlib.  However, there are minor flaws in each exercise as detailed in the feedback.  The overall correctness is high because the core functionality described in the chapter content is implemented, but improvements are needed to enhance robustness and user experience.
+- readability: The code is generally well-structured and easy to follow.  Variable names are mostly descriptive.  Adding comments in some sections would further improve readability.
+- performance: The code's performance is acceptable for the tasks involved. The operations are straightforward and efficiently implemented.  No major performance bottlenecks are present.
+- security: No security vulnerabilities are apparent in the provided code. It only interacts with local files and does not involve network operations or external data sources that could pose security risks.
+
