@@ -1,0 +1,10 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/Day4/EXP/dailychallw7d4.py
+suggestions for improvement:
+- The code uses a list of lists instead of the provided dictionary structure. While functionally equivalent, using the dictionary would align more closely with the instructions and potentially be more flexible for future modifications.
+- Error handling (e.g., checking file existence, handling potential exceptions during file operations) is missing. Adding error handling would improve the robustness of the code.
+Brief justification:
+- correctness: The code successfully creates an Excel workbook, adds data, calculates averages using formulas, and applies formatting.  It deviates slightly by using a list of lists instead of the specified dictionary, but this is a minor deviation that doesn't impact the core functionality.  All requirements specified in "What you'll create" are fulfilled. The code directly addresses all points in "Your Task" except for directly using the dictionary.
+- readability: The code is well-structured and easy to follow.  The use of `ascii_uppercase` is a bit cryptic but functional.  More descriptive variable names could enhance readability.
+- performance: The code's performance is good. It efficiently creates and populates the Excel file, and the average calculation is done directly in Excel, avoiding unnecessary processing in Python.
+- security: The code doesn't involve any security concerns as it only creates and writes to a local file. No external inputs are processed, mitigating any potential security risks.
+
