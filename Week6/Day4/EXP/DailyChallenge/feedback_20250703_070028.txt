@@ -1,0 +1,11 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week6/Day4/EXP/DailyChallenge/olympic.sql
+suggestions for improvement:
+- The code for Exercise 1, Task 2 could be improved by directly selecting the top 3 competitors within the subquery instead of creating a temporary table and then ordering and limiting afterwards. This would be more efficient.
+- Exercise 2, Task 1 uses a common table expression (CTE), which is good practice.  However, consider adding indexes to relevant columns (person_id, event_id, region_id) to improve query performance, especially on a large dataset.
+- Add comments to explain the purpose of each CTE and temporary table for better readability.
+Brief justification:
+- correctness: The code generally addresses all tasks in the exercises.  However, Task 2 of Exercise 1 could be optimized for better efficiency.  All code directly relates to the chapter content and solves the specified problems.
+- readability: The code is well-structured and uses clear variable names.  However, adding comments would enhance readability, especially in more complex queries.
+- performance: The code's performance is reasonable.  However, indexing key columns and optimizing Task 2 of Exercise 1 as suggested would yield significant performance improvements, especially with a large dataset. The use of CTEs for Exercise 2, Task 1 is a good performance choice.
+- security: No security vulnerabilities are present in the provided SQL code. The code only interacts with the specified database and does not handle external input that could pose security risks.
+

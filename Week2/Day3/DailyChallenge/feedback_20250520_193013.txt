@@ -1,0 +1,12 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/Week2/Day3/DailyChallenge/Circle.py
+suggestions for improvement:
+- The `__init__` method should include input validation to handle cases where both `radius` and `diameter` are provided or neither is provided.  It should raise a ValueError in these scenarios.
+- The docstrings could be improved to better explain the purpose and functionality of each method.
+- Add a `__ne__` method for inequality comparison for completeness.
+- Consider adding more comprehensive error handling (e.g., `try-except` blocks) to handle potential exceptions, such as those that might arise from invalid input types.
+Brief justification:
+- correctness: The code correctly implements the creation of Circle objects using either radius or diameter. It accurately calculates area, uses dunder methods for addition, equality, comparison, and string representation. The sorting functionality works as expected.  However, the `__init__` method lacks comprehensive error handling for invalid input combinations,  slightly detracting from perfect correctness.
+- readability: The code is generally readable, with clear method names and straightforward logic. However, adding docstrings would significantly improve readability and understanding.  The lack of error handling makes it slightly less readable, because the user needs to figure out that it will only accept one argument at a time. 
+- performance: The code's performance is efficient. The calculations are straightforward, and there are no unnecessary computations or inefficiencies. The use of properties prevents redundant calculations.
+- security: The code doesn't present any obvious security vulnerabilities.  It handles inputs appropriately given the constraints.
+
