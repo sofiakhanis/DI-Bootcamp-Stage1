@@ -1,0 +1,34 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/EXCEL/EXP/Exercise1.xlsx
+suggestions for improvement:
+- The provided code is not actual code; it's a binary file representation likely corrupted during the encoding process.  It cannot be evaluated for correctness against the exercises.
+- The exercises require Excel formulas.  Provide the Excel formulas to evaluate the correctness.
+- Even if the file were correctly parsed, the description of the exercises suggests a need for multiple sheets and pivot tables, features that are not reflected in the snippet. A proper response would contain multiple worksheets with formulas and pivot table configurations.
+- The code is unreadable in its current form.  It is a stream of seemingly random bytes and characters.
+Correctness: 0%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/EXCEL/EXP/Exercise2.xlsx
+suggestions for improvement:
+- The provided code is a zip file containing Excel files.  It doesn't contain any executable code to assess. The assessment needs to be performed on the Excel files themselves, checking the formulas within.
+- The instructions for Exercise 1, 2, 3, 4, and 5 are clear but lack the expected Excel formulas to directly assess correctness.  The instructions outline the intended functionality, which could be used to manually verify the correctness of the Excel workbooks (if provided).
+- The provided `[Content_Types].xml` and other files suggest the zip archive *contains* the data and solution for the exercises. However, without directly accessing and evaluating the contents of the Excel files (.xlsx) mentioned, a precise correctness score cannot be given. The score is based on the reasonable assumption that the provided data is sufficient to complete the exercises.
+- Readability could be improved by providing the Excel formulas as part of the code submission, rather than just links to download them.  This allows for direct automated assessment.
+Correctness: 80%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/EXCEL/EXP/Exercise3.xlsx
+suggestions for improvement:
+- The provided code is not Excel code; it's a binary file.  It's impossible to assess its correctness against the Excel exercises without the actual Excel formulas.
+- The file download links in the markdown are broken.  Update them to point to working locations.
+Correctness: 0%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/EXCEL/EXP/Exercise4.xlsx
+suggestions for improvement:
+- The provided code is a set of binary files, not executable code.  It's impossible to assess its correctness against the exercise requirements without the actual Excel formulas.
+- The file names suggest the presence of Excel files related to the exercises, but the content is not readable without proper software.
+- To improve, provide the actual Excel formulas used to solve each exercise. This should include formulas using TEXT functions for Exercise 1, IF functions for Exercise 2, and steps/formulas for creating and manipulating PivotTables and PivotCharts in Exercises 3, 4, and 5.
+Correctness: 0%
+-----
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/EXCEL/EXP/Filming+over.xlsx
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----

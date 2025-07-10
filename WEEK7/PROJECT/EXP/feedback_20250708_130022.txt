@@ -1,0 +1,9 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/PROJECT/EXP/miniprojectxp.py
+suggestions for improvement:
+- The code could benefit from more descriptive variable names (e.g., instead of `query1`, use `query_count_jan_2018_orders`).
+- Adding comments to explain complex SQL queries would enhance readability.
+- Consider using parameterized queries instead of directly embedding values in SQL strings to prevent SQL injection vulnerabilities (although not a direct concern here given the context).
+- For better performance with larger datasets, explore database indexing strategies.  Currently, the queries might be slow on very large datasets.
+- The file paths for CSV files are hardcoded. It's better to make them configurable through environment variables or command-line arguments for greater flexibility.
+Correctness: 100%
+-----

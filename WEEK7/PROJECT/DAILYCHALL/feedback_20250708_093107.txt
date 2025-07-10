@@ -1,0 +1,9 @@
+URL: URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/PROJECT/DAILYCHALL/miniprojdailyw6.py
+suggestions for improvement:
+- The code lacks error handling for database connection and query execution.  Add `try-except` blocks to handle potential `sqlite3.Error` exceptions.
+- Improve readability by using more descriptive variable names (e.g., instead of `query2`, use `player_match_query`).
+- The queries are long and could be broken into smaller, more manageable parts for better readability and maintainability. Consider using common table expressions (CTEs) more effectively to improve organization.
+- The performance could be improved by adding indexes to relevant columns in the database before running the queries. This would speed up joins significantly.
+- Add comments explaining the purpose of each query and the logic behind the calculations.
+Correctness: 80%
+-----
