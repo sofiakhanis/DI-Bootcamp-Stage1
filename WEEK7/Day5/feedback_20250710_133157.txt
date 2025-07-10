@@ -1,0 +1,16 @@
+URL: https://github.com/sofiakhanis/DI-Bootcamp-Stage1/blob/main/WEEK7/Day5/exphtmlw7d5.py
+suggestions for improvement:
+- The code for Exercise 1 correctly parses the provided HTML, but it doesn't fetch a webpage using `urlopen()`.  It directly uses a string containing HTML.
+- Exercise 2 correctly fetches and displays the robots.txt content.
+- Exercise 3 attempts to extract headers but uses the wrong data source. It displays the response headers instead of the HTML headers.
+- Exercise 4 uses the wrong data source, similar to Exercise 3.  The title check should be done on the content of the page, not the headers.
+- Exercises 5 and 6 have major flaws. Exercise 5 attempts to parse the US-CERT page but uses an incorrect selector for the alerts. It also incorrectly processes the dates. Exercise 6 scrapes IMDB, but does not handle potential errors (e.g., missing elements) robustly. It also hardcodes selectors which might break if the website structure changes.
+- Error handling is missing throughout the code.  It frequently assumes successful requests and data structure without checking.
+- The code lacks comments, especially in more complex sections like the IMDB scraping (Exercise 6).
+- Use more descriptive variable names. For example, instead of `response`, use `wikipedia_response` or similar.
+Brief justification:
+- correctness: The code partially addresses the exercises. Exercises 1's implementation doesn't align with the requirement to use `urlopen()`. Exercises 3 and 4 use the wrong data source to extract elements. Exercises 5 and 6 contain significant errors in their scraping logic, data parsing, and error handling. Only Exercise 2 completely fulfills its requirements.
+- readability: The code is generally readable, but it could be significantly improved with better variable names, more comments, especially in the scraping sections, and better structuring of the code into functions.
+- performance: The performance is acceptable for the small amount of data handled, but the inefficient selectors in Exercises 5 and 6 could lead to performance issues when dealing with larger websites or datasets. No attempt has been made at optimizing the code for speed.
+- security: The code uses `requests` without explicitly setting a User-Agent header, which could lead to being blocked by websites.  The IMDB scraping (Exercise 6) could lead to overloading the target site if run frequently without proper delays and respect for the `robots.txt`.  Additionally, there's no handling of potential errors during web requests, making it vulnerable to crashes if the target websites are down or return unexpected data.
+
